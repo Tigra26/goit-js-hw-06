@@ -1,2 +1,2 @@
-# goit-js-hw-006
+# goit-js-hw-06
 Methods bind, call, apply, this, prototypes and classes
