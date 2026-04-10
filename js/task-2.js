@@ -19,6 +19,7 @@ class Storage {
     if (index !== -1) {
       this.#items.splice(index, 1);
     }
+    return;
   }
 }
 
