@@ -14,18 +14,12 @@ class Storage {
   }
 
   removeItem(itemToRemove) {
-    // Якщо умовою було змінити існуючий масив
+    const index = this.#items.indexOf(itemToRemove);
 
-    // const index = this.#items.indexOf(itemToRemove);
-
-    // if (index !== -1) {
-    //   this.#items.splice(index, 1);
-    // }
-    // return this.#items;
-
-    // Якщо умовою було повернути новий масив
-
-    return (this.#items = this.#items.filter(item => item !== itemToRemove));
+    if (index !== -1) {
+      this.#items.splice(index, 1);
+    }
+    return this.#items;
   }
 }
 
